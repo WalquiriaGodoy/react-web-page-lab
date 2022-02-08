@@ -1,0 +1,15 @@
+.formulario{
+    padding: 12px 40px;
+    flex-grow: 4;
+}
+.titulo-principal{
+    padding: 12px 40px;
+    flex-grow: 2;
+    font-size: larger;
+    text-align: center;
+    border: groove;
+    margin: inherit;
+}
+.selecao-curso{
+    margin-top: 20px;
+}

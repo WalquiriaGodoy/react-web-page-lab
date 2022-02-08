@@ -1,0 +1,8 @@
+.titulo-pagamento{
+    padding: 10px;
+    flex-grow: 2;
+    font-size: larger;
+    text-align: initial;
+    border: inset;
+    width: fit-content;
+}
