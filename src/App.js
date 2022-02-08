@@ -3,6 +3,7 @@ import './assets/index.css';
 import './assets/App.css';
 import Cabecalho from './componentes/Cabecalho';
 import SelecaoDoCurso from './componentes/SelecaoDoCurso';
+import ListaDeCards from './componentes/ListaDeCards';
 import CarrinhoDeCompras from './componentes/CarrinhoDeCompras';
 import Pagamento from './componentes/Pagamento';
 import Rodape from './componentes/Rodape';
@@ -21,6 +22,7 @@ class App extends Component {
 
           <div className='caixa-cursos'>
             <SelecaoDoCurso/>
+            <ListaDeCards/>
           </div>
 
           <section className='compras'>
