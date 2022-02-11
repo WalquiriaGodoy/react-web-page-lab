@@ -9,8 +9,8 @@ class ListaDeCards extends Component{
 
     render(){
         return(
-            <ul className="lista-cards">
-                <li className="lista-cards_item">
+            <ul>
+                <li className="caixa-cards">
                     <CardCurso/>
                 </li>
             </ul>
