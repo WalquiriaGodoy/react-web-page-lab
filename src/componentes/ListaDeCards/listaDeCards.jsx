@@ -20,19 +20,25 @@ class ListaDeCards extends Component{
         this.setState({turmas});
     }
 
+    selecionaTurmaPorId(turmaId){
+        const turma = this.state.turmas.filter((turma)=> turma.id == turmaId)
+        this.props.turmaSelecionada(turma)
+      }
+
     render(){
         return(
-            console.log("entrou no Lista de cards", this.props),
             <ul>
                 {this.state.turmas.map((cards, index) => {
                     return(
                         <li className="caixa-cards" key={index}>
                             <CardCurso
+                            turmaSelecionada={this.selecionaTurmaPorId.bind(this)}
                             indice = {index}
                             curso = {cards.curso}
                             turma = {cards.turma}
                             dia = {cards.dia}
-                            preco = {cards.preco}   
+                            preco = {cards.preco} 
+                            id = {cards.id}  
                             />
                         </li>
                     );

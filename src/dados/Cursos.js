@@ -6,47 +6,48 @@ export default class ArrayDeCards {
             {
                 curso: "Forró",
                 turma: "Turma Galileu",
-                dia: "Terça, 20h",
-                preco: "R$70,00"
+                dia: "Terça, 21h",
+                preco: "R$70,00",
+                id:1,
             }, 
             {
                 curso: "Forró",
                 turma: "Turma Newton",
                 dia: "Sábado, 18h",
-                preco: "R$70,00"
+                preco: "R$70,00",
+                id: 2,
             },
             {
                 curso: "Forró",
                 turma: "Turma Einstein",
                 dia: "Quinta, 21h",
-                preco: "R$70,00"
+                preco: "R$70,00",
+                id:3,
+            },
+            {
+                curso: "Samba",
+                turma: "Turma Galileu",
+                dia: "Terça, 20h",
+                preco: "R$70,00",
+                id:4,
+            },
+            {
+                curso: "Samba",
+                turma: "Turma Newton",
+                dia: "Sábado, 17h",
+                preco: "R$70,00",
+                id:5
             },
             {
                 curso: "Samba",
                 turma: "Turma Einstein",
-                dia: "Quinta, 21h",
-                preco: "R$70,00"
+                dia: "Quinta, 20h",
+                preco: "R$70,00",
+                id:6,
             },
     
     ]
     }
-
-    // adicionarCard(curso){
-    //     const cursoEscolhido = curso;
-    //     if (cursoEscolhido == "Forró Universitário"){
-    //         const novoCard = new Card(this.forro1.curso, this.forro1.turma, this.forro1.dia, this.forro1.preco);
-    //         this.cards.push(novoCard);
-    //         this.notificar();
-    //     };
-    // }
 }
 
-// class Card{
-//     constructor(curso,turma, dia, preco){
-//         this.curso = curso;
-//         this.turma = turma;
-//         this.dia = dia;
-//         this.preco = preco;
-//     }
-// }
         

@@ -36,6 +36,10 @@ class App extends Component {
     this.notificar();
   }
 
+  adicionaTurma(turma){
+    console.log("turma", turma)
+  }
+
   render(){
     return(
       <section className='conteudo'>
@@ -50,6 +54,7 @@ class App extends Component {
               cursoSelecionado={this.filtrarTurmas.bind(this)}
               />
             <ListaDeCards
+              turmaSelecionada={this.adicionaTurma.bind(this)}
               turmas={this}
               />
           </div>
