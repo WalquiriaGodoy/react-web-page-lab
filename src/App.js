@@ -15,8 +15,25 @@ class App extends Component {
     this.arrayDeCards = new ArrayDeCards();
     this.turmasDoCurso = [];
     this._inscritos = [];
-
+    this._inscritos1 = [];
+    this.turmasDeCompra = [];
   }
+
+  inscrever1(func) {
+      this._inscritos1.push(func);
+  }
+  
+  desinscrever1(func){
+      this._inscritos1 = this._inscritos1.filter(f => f !== func);
+  }
+  
+  notificar1() {
+    this._inscritos1.forEach(func => {
+        func(this.turmasDeCompra)
+    })
+  }
+
+  
   inscrever(func) {
       this._inscritos.push(func);
   }
@@ -26,19 +43,23 @@ class App extends Component {
   }
   
   notificar() {
-      this._inscritos.forEach(func => {
-          func(this.turmasDoCurso)
-      })
+    this._inscritos.forEach(func => {
+        func(this.turmasDoCurso)
+    })
   }
+
   filtrarTurmas(curso){
     const turmasDoCurso = this.arrayDeCards.turmas.filter((turma)=> turma.curso == curso);
     this.turmasDoCurso = turmasDoCurso;
     this.notificar();
   }
 
-  adicionaTurma(turma){
-    console.log("turma", turma)
+  adicionarTurma(turma){
+    console.log("turma", turma);
+    this.turmasDeCompra.push(turma);
+    this.notificar1();
   }
+
 
   render(){
     return(
@@ -54,7 +75,7 @@ class App extends Component {
               cursoSelecionado={this.filtrarTurmas.bind(this)}
               />
             <ListaDeCards
-              turmaSelecionada={this.adicionaTurma.bind(this)}
+              turmaSelecionada={this.adicionarTurma.bind(this)}
               turmas={this}
               />
           </div>
@@ -62,7 +83,10 @@ class App extends Component {
           <section className='compras'>
 
             <div className='caixa-carrinho'>
-              <CarrinhoDeCompras/>
+              <CarrinhoDeCompras
+              turmas={this}
+              turmasDeCompra={this.turmasDeCompra}
+              />
             </div>
             
             <div className='caixa-pagamento'>
