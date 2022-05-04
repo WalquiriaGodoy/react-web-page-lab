@@ -1,8 +1,13 @@
-.titulo-principal{
-    padding: 12px 40px;
-    flex-grow: 2;
-    font-size: larger;
-    text-align: center;
-    border: groove;
-    margin: inherit;
+.titulo-principal {
+  padding: 12px 40px;
+  flex-grow: 2;
+  font-size: larger;
+  text-align: center;
+  border: groove;
+  margin: inherit;
+}
+
+.lista-compras {
+  display: flex;
+  flex-direction: column;
 }
