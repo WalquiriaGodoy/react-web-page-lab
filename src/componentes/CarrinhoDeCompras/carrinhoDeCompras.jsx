@@ -23,7 +23,7 @@ class CarrinhoDeCompras extends Component {
     return (
       <>
         <h1 className='titulo-principal'>Meu Carrinho de Compras</h1>
-        {console.log(this.state.turmasNoCarrinho)}
+        {console.log('turmas no carrinho:', this.state.turmasNoCarrinho)}
         <ul className='lista-compras'>
           {this.state.turmasNoCarrinho.map((turma, index) => {
             return (
