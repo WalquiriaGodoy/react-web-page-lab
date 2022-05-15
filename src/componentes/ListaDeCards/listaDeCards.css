@@ -1,6 +1,9 @@
-ul{
-    display: flex;
+ul {
+  display: contents;
 }
-.caixa-cards{
-    padding: 0 10px 0 10px;
+.lista-cards {
+  display: flex;
+}
+.caixa-cards {
+  padding: 0 10px 0 10px;
 }

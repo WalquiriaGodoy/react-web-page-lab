@@ -12,7 +12,8 @@ header {
   margin: 10px auto;
 }
 
-ul {
+.lista-navegacao {
+  display: flex;
   position: absolute;
   top: 110px;
   right: 0;

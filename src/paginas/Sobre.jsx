@@ -65,7 +65,6 @@ class Sobre extends Component {
     return (
       <section className='conteudo'>
         <Cabecalho />
-
         <section className='conteudo-principal'>
           <div className='caixa-cursos'>
             <SelecaoDoCurso
@@ -91,7 +90,6 @@ class Sobre extends Component {
             </div>
           </section>
         </section>
-
         <Rodape />
       </section>
     );

@@ -13,7 +13,7 @@ class Cabecalho extends Component {
       <header>
         <div class='caixa-transparente'>
           <img class='cabecalho-logo' src={logolab2} />
-          <ul>
+          <ul className='lista-navegacao'>
             <li>
               <Link className='item-lista-navegacao' to='/'>
                 Home
