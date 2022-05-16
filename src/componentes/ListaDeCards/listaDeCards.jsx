@@ -21,7 +21,7 @@ class ListaDeCards extends Component {
   }
 
   selecionaTurmaPorId(turmaId) {
-    const turma = this.state.turmas.filter((turma) => turma.id == turmaId);
+    const turma = this.state.turmas.find((turma) => turma.id == turmaId);
     this.props.turmaSelecionada(turma);
   }
 

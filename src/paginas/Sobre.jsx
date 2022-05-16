@@ -7,12 +7,12 @@ import ListaDeCards from '../componentes/ListaDeCards';
 import CarrinhoDeCompras from '../componentes/CarrinhoDeCompras';
 import Pagamento from '../componentes/Pagamento';
 import Rodape from '../componentes/Rodape';
-import ArrayDeCards from '../dados/Cursos';
+import Escola from '../dados/Cursos';
 
 class Sobre extends Component {
   constructor() {
     super();
-    this.arrayDeCards = new ArrayDeCards();
+    this.arrayDeCards = new Escola();
     this.turmasDoCurso = [];
     this._inscritos = [];
     this._inscritos1 = [];

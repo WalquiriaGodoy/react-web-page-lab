@@ -28,7 +28,15 @@ class CarrinhoDeCompras extends Component {
           {this.state.turmasNoCarrinho.map((turma, index) => {
             return (
               <li className='caixa-card-compras' key={index}>
-                <CardCompras turmas={turma} />
+                <CardCompras
+                  turmas={turma}
+                  indice={index}
+                  curso={turma.curso}
+                  turma={turma.turma}
+                  dia={turma.dia}
+                  preco={turma.preco}
+                  id={turma.id}
+                />
               </li>
             );
           })}

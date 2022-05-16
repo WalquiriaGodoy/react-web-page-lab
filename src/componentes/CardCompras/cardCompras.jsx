@@ -10,6 +10,7 @@ class CardCompras extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className='lista-card-compras'>
         <section
