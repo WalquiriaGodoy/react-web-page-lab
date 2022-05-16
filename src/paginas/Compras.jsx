@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './../assets/index.css';
 import './../assets/Sobre.css';
-import Cabecalho from './../componentes/Cabecalho';
+import Cabecalho from '../componentes/Cabecalho';
 import SelecaoDoCurso from '../componentes/SelecaoDoCurso';
 import ListaDeCards from '../componentes/ListaDeCards';
 import CarrinhoDeCompras from '../componentes/CarrinhoDeCompras';
