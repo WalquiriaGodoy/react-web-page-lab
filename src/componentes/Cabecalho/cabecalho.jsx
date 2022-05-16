@@ -20,8 +20,13 @@ class Cabecalho extends Component {
               </Link>
             </li>
             <li>
-              <Link className='item-lista-navegacao' to='/sobre'>
-                Sobre
+              <Link className='item-lista-navegacao' to='/cadastro'>
+                Cadastro
+              </Link>
+            </li>
+            <li>
+              <Link className='item-lista-navegacao' to='/cursos'>
+                Cursos
               </Link>
             </li>
           </ul>

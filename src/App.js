@@ -5,6 +5,7 @@ import CardCompras from './componentes/CardCompras/cardCompras';
 import Rodape from './componentes/Rodape';
 import Home from './paginas/Home';
 import Compras from './paginas/Compras';
+import Cadastro from './paginas/Cadastro';
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/sobre' element={<Compras />} />
+          <Route exact path='/cadastro' element={<Cadastro />} />
+          <Route path='/cursos' element={<Compras />} />
         </Routes>
       </Router>
     );
