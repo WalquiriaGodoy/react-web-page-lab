@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Cabecalho from './componentes/Cabecalho';
-import CardCompras from './componentes/CardCompras/cardCompras';
-import Rodape from './componentes/Rodape';
 import Home from './paginas/Home';
 import Compras from './paginas/Compras';
 import Cadastro from './paginas/Cadastro';
